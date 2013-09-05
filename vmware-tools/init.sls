@@ -11,7 +11,7 @@ vmwaredirectory:
 vmwaretar:
   file.managed:
     - name: /opt/vmware/VMwareTools-{{ vmware_version }}.tar.gz
-    - source: salt://vmware/files/VMwareTools-{{ vmware_version }}.tar.gz
+    - source: salt://vmware-tools/files/VMwareTools-{{ vmware_version }}.tar.gz
     - require:
       - file.directory: /opt/vmware
   cmd.run:
